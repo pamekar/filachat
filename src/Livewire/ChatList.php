@@ -8,7 +8,7 @@ use Filament\Actions\Contracts\HasActions;
 use Filament\Forms;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
-use Filament\Support\Enums\MaxWidth;
+use Filament\Support\Enums\Width;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Foundation\Application;
@@ -115,7 +115,7 @@ class ChatList extends Component implements HasActions, HasForms
                     ->required()
                     ->autosize(),
             ])->modalSubmitActionLabel(__('Add'))
-            ->modalWidth(MaxWidth::Large)
+            ->modalWidth(Width::Large)
             ->action(fn (array $data) => ChatListService::make()->createConversation($data));
     }
 

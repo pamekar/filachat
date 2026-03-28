@@ -3,7 +3,7 @@
 namespace JaOcero\FilaChat\Pages;
 
 use Filament\Pages\Page;
-use Filament\Support\Enums\MaxWidth;
+use Filament\Support\Enums\Width;
 use Illuminate\Contracts\Support\Htmlable;
 use JaOcero\FilaChat\Events\FilaChatMessageReadEvent;
 use JaOcero\FilaChat\Models\FilaChatConversation;
@@ -82,7 +82,7 @@ class FilaChat extends Page
         return __(config('filachat.navigation_label'));
     }
 
-    public function getMaxContentWidth(): MaxWidth | string | null
+    public function getMaxContentWidth(): Width | string | null
     {
         return config('filachat.max_content_width');
     }
