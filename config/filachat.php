@@ -243,10 +243,10 @@ return [
     |
     | This option specifies the maximum width of the chat page. You can
     | customize this if you have a different width in your application. You can use
-    | all enum values from \Filament\Support\Enums\Width.
+    | all enum values from \Filament\Support\Enums\MaxWidth.
     |
     */
-    'max_content_width' => \Filament\Support\Enums\Width::Full,
+    'max_content_width' => \Filament\Support\Enums\MaxWidth::Full,
 
     /*
     |--------------------------------------------------------------------------
